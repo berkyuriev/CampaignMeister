@@ -5,9 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="./style.css" rel="stylesheet" />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
+		/>
 		/>
 	</head>
 	<body class="font-[Barlow] bg-[#0A1C38] text-white">
@@ -25,7 +28,7 @@
 					</div>
 					<div class="pr-5 md:pr-10">
 						<button
-							class="bg-[#173158] border rounded-[5px] text-white hover:bg-transparent hover:text-[#FCD130] hover:border-[#173158] border-[#173158] px-5 py-[12px] md:py-3 md:p-10"
+							class="bg-[#173158] border-2 rounded-[3px] duration-200 ease-in text-white hover:bg-transparent hover:text-[#FCD130] hover:border-[#173158] border-[#173158] px-5 py-[12px] md:py-3 md:p-10"
 						>
 							Login
 						</button>
@@ -33,20 +36,21 @@
 				</nav>
 			</div>
 		</header>
-
 		<section
-			class="w-full flex max-w-[1440px] flex-col-reverse md:flex-row mb-5 md:mb-8 mx-auto pt-20 md:pt-[140px] px-5 md:px-10"
+			class="w-full flex max-w-[1440px] flex-col-reverse md:flex-row mb-5 md:mb-8 mx-auto pt-20 md:pt-[110px] px-5 md:px-10"
 		>
 			<div class="w-full xl:w-2/5 md:mr-5 lg:mr-10 xl:mr-20">
 				<div class="bg-[#0A1C38] mb-10">
-					<h1 class="text-[32px] tracking-0 leading-10 mb-10">
-						<span class="text-[#FFCF02] font-semibold">
+					<h1
+						class="text-[32px] tracking-0 leading-10 mb-10 md:pr-5 pr-[80px] font-[500]"
+					>
+						<span class="text-[#FFCF02]">
 							The ugly truth: Your campaign data are a mess.
 						</span>
 						By fixing it, you can improve your campaign performance with over
 						25%.
 					</h1>
-					<p class="text-xl">
+					<p class="text-xl font-[300]">
 						Optimising campaigns is hard, especially if you lack trustworthy
 						data. Unfortunately this is the case for more than 65% of the
 						companies.
@@ -59,47 +63,60 @@
 				<form
 					class="bg-[#173158] mx-auto lg:mx-0 max-w-[500px] rounded-2xl shadow-lg p-5"
 				>
-					<h3 class="text-2xl font-semibold mb-2.5 text-left">
-						<span class="text-[#FFCF02]">Join</span> waiting list of access
+					<h3 class="text-2xl mb-3 text-left">
+						<span class="text-[#FFCF02] font-[400]">Join</span> waiting list of
+						access
 					</h3>
 					<div class="flex items-center">
 						<input
 							type="email"
 							placeholder="Enter email"
-							class="border-none bg-white rounded-md text-[#173158] max-w-[330px] w-full mr-2.5 p-4"
+							class="bg-white opacity-70 hover:opacity-100 duration-200 ease-in rounded-[4px] text-[#173158] max-w-[330px] w-full mr-2.5 p-[14px]"
 						/>
 						<button
 							type="submit"
-							class="bg-[#FFCF02] text-[#173158] ml-auto font-semibold px-10 py-4 rounded-md hover:bg-[#FFD633] border-2 border-[#173158]"
+							class="ease-in duration-200 max-w-[111px] bg-[#FCD130] hover:text-[#FCD130] hover:border-[#FCD130] border-[#173158] text-[#173158] ml-auto font-[600] px-10 py-[14px] rounded-[6px] hover:bg-[#173158] border-2"
 						>
 							Join
 						</button>
 					</div>
-					<div>
-						<label class="flex items-center space-x-2 pt-[13px] text-[12px]">
-							<input type="checkbox" id="check" class="form-checkbox" />
-							<span class="">
-								I agree to the
-								<a href="#" class="underline text-[#FFCF02]"
-									>Terms and Conditions</a
-								>
-								and
-								<a href="#" class="underline text-[#FFCF02]">Privacy Policy</a>.
-							</span>
+					<div class="flex items-center md:pt-2 md:pb-2">
+						<input
+							id="link-checkbox"
+							type="checkbox"
+							class="peer relative appearance-none w-5 h-5 border-2 rounded-[5px] border-[#7184AB] focus:outline-none checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
+						/>
+						<label
+							for="link-checkbox"
+							class="md:rounded-2xl ms-2 text-xs font-[100]"
+							>I agree to the
+							<a href="#" class="text-[#FFCF02] text-xs hover:underline"
+								>Terms & Conditions</a
+							>
+							and the
+							<a href="#" class="text-[#FFCF02] text-xs hover:underline"
+								>Privacy Policy</a
+							>
 						</label>
 					</div>
 					<div>
 						<label class="flex items-center space-x-2 text-xs">
 							<input
-								class="form-checkbox border-[#173158] text-[#173158] focus:ring-[#173158] checked:bg-[#173158] checked:border-[#173158]"
+								id="default-checkbox"
 								type="checkbox"
+								value=""
+								class="peer relative appearance-none w-5 h-5 border-2 rounded-[5px] border-[#7184AB] focus:outline-none checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
 							/>
-							<span class=""> I want to subscribe to the newsletter. </span>
+							<span class="font-[100]">
+								I want to subscribe to the newsletter.
+							</span>
 						</label>
 					</div>
 				</form>
 			</div>
-			<div class="w-full xl:w-3/5 flex items-center justify-center pt-5">
+			<div
+				class="w-full xl:w-3/5 flex items-center justify-center pt-5 bg-radial from-[#173158] from-10% to-[#0A1C38] to-70%"
+			>
 				<img class="w-full" src="images/hero-img.png" alt="Hero Image" />
 			</div>
 		</section>
@@ -113,9 +130,7 @@
 					class="border-b-2 border-[#173158] rounded-t-2xl border-b-[#0A1C38] leading-10 text-[32px] text-center py-10 lg:py-20 xl:py-20"
 				>
 					How to
-					<span class="text-[#FFCF02] font-semibold"
-						>boost your performance</span
-					>
+					<span class="text-[#FFCF02] font-[500]">boost your performance</span>
 					with flawless data
 				</h1>
 				<div class="px-5 mx-auto bg-[#173158]">
@@ -159,7 +174,7 @@
 
 							<div class="mx-auto w-[280px]">
 								<h1 class="text-left">
-									<span class="text-[#FFCF02] font-semibold text-2xl"
+									<span class="text-[#FFCF02] font-[500] text-2xl"
 										>Smart Start</span
 									>
 								</h1>
@@ -184,7 +199,7 @@
 								class="flex flex-col justify-end mx-auto w-[280px] col-start-3 row-end-3"
 							>
 								<h1 class="text-left">
-									<span class="text-[#FFCF02] font-semibold text-2xl"
+									<span class="text-[#FFCF02] font-[500] text-2xl"
 										>Smart Flight</span
 									>
 								</h1>
@@ -209,7 +224,7 @@
 								class="flex flex-col justify-end mx-auto w-[280px] col-start-1 row-end-3"
 							>
 								<h1 class="text-left">
-									<span class="text-[#FFCF02] font-semibold text-2xl"
+									<span class="text-[#FFCF02] font-[500] text-2xl"
 										>Smart Learning</span
 									>
 								</h1>
@@ -233,14 +248,14 @@
 					class="hidden md:block border-b-2 border-[#173158] rounded-t-2xl border-b-[#0A1C38] leading-10 text-[32px] text-center py-10 lg:py-20 xl:py-20"
 				>
 					The
-					<span class="text-[#FFCF02] font-semibold">Building Blocks</span>
+					<span class="text-[#FFCF02] font-[500]">Building Blocks</span>
 					of CampaignMeister
 				</h1>
 				<h2
 					class="md:hidden border-b-2 border-[#173158] rounded-t-2xl border-b-[#0A1C38] leading-10 text-[32px] text-center py-10 lg:py-20 xl:py-20"
 				>
 					Why
-					<span class="text-[#FFCF02] font-semibold">use</span>
+					<span class="text-[#FFCF02] font-[500]">use</span>
 					CampaignMeister?
 				</h2>
 			</div>
@@ -256,12 +271,10 @@
 					</div>
 					<div class="col-span-2">
 						<h1>
-							<span class="text-[#FFCF02] font-semibold text-xl"
-								>Smart Campaigns</span
-							>
+							<span class="text-[#FFCF02] font-[500]">Smart Campaigns</span>
 						</h1>
 						<br />
-						<div class="md:col-span-2 md:row-span-2">
+						<div class="md:col-span-2 md:row-span-2 font-[100]">
 							<p>
 								Easily set up structured campaigns with clear goals and
 								objectives. Ensure flawless measurement of all campaign tactics
@@ -279,12 +292,10 @@
 					</div>
 					<div class="col-span-2">
 						<h1>
-							<span class="text-[#FFCF02] font-semibold text-xl"
-								>Full Funnel</span
-							>
+							<span class="text-[#FFCF02] font-[500]">Full Funnel</span>
 						</h1>
 						<br />
-						<div class="md:col-span-2 md:row-span-2">
+						<div class="md:col-span-2 md:row-span-2 font-[100]">
 							<p>
 								Manage all your campaigns across all channels, brands and
 								countries while spanning the full customer journey.
@@ -301,12 +312,10 @@
 					</div>
 					<div class="col-span-2">
 						<h1>
-							<span class="text-[#FFCF02] font-semibold text-xl"
-								>Smart Insights</span
-							>
+							<span class="text-[#FFCF02] font-[500]">Smart Insights</span>
 						</h1>
 						<br />
-						<div class="md:col-span-2 md:row-span-2">
+						<div class="md:col-span-2 md:row-span-2 font-[100]">
 							<p>
 								We create smart insights by combining campaign attribution,
 								marketing mix modeling and validated experiments to improve your
@@ -324,12 +333,10 @@
 					</div>
 					<div class="col-span-2">
 						<h1>
-							<span class="text-[#FFCF02] font-semibold text-xl"
-								>Campaign Governance</span
-							>
+							<span class="text-[#FFCF02] font-[500]">Campaign Governance</span>
 						</h1>
 						<br />
-						<div class="md:col-span-2 md:row-span-2">
+						<div class="md:col-span-2 md:row-span-2 font-[100]">
 							<p>
 								Ensure proper naming conventions across all campaigns, maintain
 								clear definitions of dimensions and metrics and keep track of
@@ -344,12 +351,10 @@
 					</div>
 					<div class="col-span-2">
 						<h1>
-							<span class="text-[#FFCF02] font-semibold text-xl"
-								>Smart Data</span
-							>
+							<span class="text-[#FFCF02] font-[500]">Smart Data</span>
 						</h1>
 						<br />
-						<div class="md:col-span-2 md:row-span-2">
+						<div class="md:col-span-2 md:row-span-2 font-[100]">
 							<p>
 								We monitor all datasources on matters such as data freshness and
 								schema changes. Our anomaly detection algorithms will warn you
@@ -367,12 +372,10 @@
 					</div>
 					<div class="col-span-2">
 						<h1>
-							<span class="text-[#FFCF02] font-semibold text-xl"
-								>Work Together</span
-							>
+							<span class="text-[#FFCF02] font-[500]">Work Together</span>
 						</h1>
 						<br />
-						<div class="md:col-span-2 md:row-span-2">
+						<div class="md:col-span-2 md:row-span-2 font-[100]">
 							<p>
 								Collaborate with all your agencies across all campaigns, brands
 								and countries. Create campaigns together, share files, chat in
@@ -393,7 +396,7 @@
 					class="border-b-2 border-[#173158] rounded-t-2xl border-b-[#0A1C38] leading-10 text-[32px] px-5 text-center py-10 lg:py-20 xl:py-20"
 				>
 					You can achieve this in just
-					<span class="text-[#FFCF02] font-semibold">three easy steps</span>
+					<span class="text-[#FFCF02] font-[500]">three easy steps</span>
 				</h1>
 				<div
 					class="md:grid md:grid-cols-3 px-6 md:divide-x-2 md:divide-[#0A1C38]"
@@ -406,13 +409,13 @@
 							<div
 								class="w-10 h-10 rounded-full place-content-center bg-[#0A1C38]"
 							>
-								<span class="font-semibold m-4 text-[#FFCF02]">1</span>
+								<span class="font-[500] m-4 text-[#FFCF02]">1</span>
 							</div>
-							<h1 class="text-2xl text-left font-semibold pt-5">
+							<h1 class="text-2xl text-left font-[500] pt-5">
 								<span class="text-[#FFCF02]">Organise</span>
 							</h1>
 							<br />
-							<h2 class="font-semibold">
+							<h2 class="font-[500]">
 								Set up all your campaigns in one tool replacing hundreds of
 								Excel Sheets
 							</h2>
@@ -432,13 +435,13 @@
 							<div
 								class="w-10 h-10 rounded-full place-content-center bg-[#0A1C38]"
 							>
-								<span class="font-semibold m-4 text-[#FFCF02]">2</span>
+								<span class="font-[500] m-4 text-[#FFCF02]">2</span>
 							</div>
-							<h1 class="text-2xl text-left font-semibold pt-5">
+							<h1 class="text-2xl text-left font-[500] pt-5">
 								<span class="text-[#FFCF02]">Analyse</span>
 							</h1>
 							<br />
-							<h2 class="font-semibold">
+							<h2 class="font-[500]">
 								Use validated data to see performance in customisable dashboards
 							</h2>
 							<br />
@@ -457,13 +460,13 @@
 							<div
 								class="w-10 h-10 rounded-full place-content-center bg-[#0A1C38]"
 							>
-								<span class="font-semibold m-4 text-[#FFCF02]">3</span>
+								<span class="font-[500] m-4 text-[#FFCF02]">3</span>
 							</div>
-							<h1 class="text-2xl text-left font-semibold pt-5">
+							<h1 class="text-2xl text-left font-[500] pt-5">
 								<span class="text-[#FFCF02]">Optimise</span>
 							</h1>
 							<br />
-							<h2 class="font-semibold">
+							<h2 class="font-[500]">
 								Improve your campaign performance with 25% through Smart
 								Insights
 							</h2>
@@ -492,7 +495,7 @@
 				<form
 					class="bg-[#173158] max-w-[500px] w-full rounded-2xl shadow-lg p-5"
 				>
-					<h3 class="text-2xl font-semibold mb-2.5 text-left">
+					<h3 class="text-2xl font-[500] mb-2.5 text-left">
 						<span class="text-[#FFCF02]">Join</span> waiting list of access
 					</h3>
 					<div class="flex items-center mb-4">
@@ -503,7 +506,7 @@
 						/>
 						<button
 							type="submit"
-							class="bg-[#FFCF02] text-[#173158] font-semibold px-10 py-4 rounded-md hover:bg-[#FFD633] border-2 border-[#173158]"
+							class="bg-[#FFCF02] text-[#173158] font-[500] px-10 py-4 rounded-md hover:bg-[#FFD633] border-2 border-[#173158]"
 						>
 							Join
 						</button>
@@ -552,7 +555,7 @@
 				</div>
 				<p class="md:pt-[227px] md:pl-[41px] md:pb-[28px]">
 					© 2022. Campaign-Meister is a product of
-					<span class="text-[#FFCF02] underline font-semibold"
+					<span class="text-[#FFCF02] underline font-[500]"
 						>Human Data Association</span
 					>
 				</p>

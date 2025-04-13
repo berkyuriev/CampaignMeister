@@ -18,14 +18,3 @@ export default {
 	},
 	plugins: [require("@tailwindcss/forms")],
 };
-module.exports = {
-	content: ["./src/**/*.{html,js}"], // Adjust paths to match your project structure
-	theme: {
-		extend: {
-			backgroundImage: {
-				"tick-image": "url('"\Users\trash\Desktop\CampaingMeister\dist\images\Property 1=active.png')", // Make sure the path is correct
-			},
-		},
-	},
-	plugins: [],
-};

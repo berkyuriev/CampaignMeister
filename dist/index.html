@@ -81,34 +81,74 @@
 						</button>
 					</div>
 					<div class="md:pb-2 pb-2">
-						<label class="flex items-center space-x-2 text-xs">
-							<input
-								id="link-checkbox"
-								type="checkbox"
-								value=""
-								class="peer static appearance-none min-w-8 h-8 md:min-w-5 md:h-5 border-2 rounded-[5px] border-[#7184AB] checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
-							/>
-							<span class="font-[100]">
+						<label class="flex items-center md:gap-2 gap-4 text-xs">
+							<div class="relative md:max-h-[20px] max-h-[32px]">
+								<input
+									id="link-checkbox"
+									type="checkbox"
+									value=""
+									class="peer appearance-none w-8 h-8 md:w-5 md:h-5 border-2 rounded-[5px] border-[#7184AB] checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
+								/>
+								<svg
+									class="pointer-events-none absolute inset-0 m-auto hidden peer-checked:block"
+									width="8"
+									height="6"
+									viewBox="0 0 8 6"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 3L3 5L7 1"
+										stroke="#0A1C38"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<span class="font-[200] h-8 md:h-5 md:flex text-left">
 								I agree to the
-								<a href="#" class="text-[#FFCF02] text-xs hover:underline"
+								<a
+									href="#"
+									class="text-[#FFCF02] text-xs underline md:no-underline mx-1"
 									>Terms & Conditions</a
 								>
 								and the
-								<a href="#" class="text-[#FFCF02] text-xs hover:underline"
+								<a
+									href="#"
+									class="text-[#FFCF02] text-xs underline md:no-underline"
 									>Privacy Policy</a
-								></span
-							>
+								>
+							</span>
 						</label>
 					</div>
 					<div>
-						<label class="flex items-center space-x-2 text-xs">
-							<input
-								id="link-checkbox"
-								type="checkbox"
-								value=""
-								class="peer relative appearance-none w-8 h-8 md:w-5 md:h-5 border-2 rounded-[5px] border-[#7184AB] checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
-							/>
-							<span class="font-[100]">
+						<label class="flex text-center md:gap-2 gap-4 items-center text-xs">
+							<div class="relative md:max-h-[20px] max-h-[32px]">
+								<input
+									id="link-checkbox"
+									type="checkbox"
+									value=""
+									class="peer appearance-none w-8 h-8 md:w-5 md:h-5 border-2 rounded-[5px] border-[#7184AB] checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
+								/>
+								<svg
+									class="pointer-events-none absolute inset-0 m-auto hidden peer-checked:block"
+									width="8"
+									height="6"
+									viewBox="0 0 8 6"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 3L3 5L7 1"
+										stroke="#0A1C38"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<span class="font-[200] text-left">
 								I want to subscribe to the newsletter.
 							</span>
 						</label>
@@ -124,7 +164,7 @@
 			</div>
 		</section>
 		<section
-			class="flex max-w-[1440px] flex-col-reverse mx-auto mb-10 px-5 md:mb-20 md:px-10"
+			class="relative flex max-w-[1440px] flex-col-reverse mx-auto mb-10 px-5 md:mb-20 md:px-10"
 		>
 			<div
 				class="border rounded-t-2xl rounded-b-2xl border-[#173158] bg-[#173158]"
@@ -154,14 +194,21 @@
 				</div>
 				<div class="bg-[#173158] mx-auto rounded-b-2xl">
 					<div class="mx-auto px-5 md:py-20 pb-10">
-						<div class="md:grid md:grid-cols-3 w-full">
+						<div class="md:grid md:grid-cols-3">
 							<div
-								class="justify-self-center col-start-2 row-end-3 md:order-last md:py-5"
+								class="justify-self-center col-start-2 row-end-3 md:order-last md:py-5 relative md:w-auto hidden md:block"
 							>
 								<img
-									class="min-w-[320px] min-h-[280px] md:min-w-[702px] mx-auto"
 									src="images/ASSET_diagram.png"
 									alt="ASSET Diagram"
+									class="min-w-[280x] min-h-[280px] md:min-w-[702px]"
+								/>
+							</div>
+							<div class="md:hidden block w-[280px] h-[280px]">
+								<img
+									src="images/ASSET_diagram.png"
+									alt="ASSET Diagram"
+									class="w-full h-full object-cover"
 								/>
 							</div>
 							<div class="md:hidden mt-10 mx-auto">
@@ -522,34 +569,74 @@
 						</button>
 					</div>
 					<div class="md:pb-2 pb-2">
-						<label class="flex items-center space-x-2 text-xs">
-							<input
-								id="link-checkbox"
-								type="checkbox"
-								value=""
-								class="peer static appearance-none min-w-8 h-8 md:min-w-5 md:h-5 border-2 rounded-[5px] border-[#7184AB] checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
-							/>
-							<span class="font-[100] text-left">
+						<label class="flex items-center md:gap-2 gap-4 text-xs">
+							<div class="relative md:max-h-[20px] max-h-[32px]">
+								<input
+									id="link-checkbox"
+									type="checkbox"
+									value=""
+									class="peer appearance-none w-8 h-8 md:w-5 md:h-5 border-2 rounded-[5px] border-[#7184AB] checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
+								/>
+								<svg
+									class="pointer-events-none absolute inset-0 m-auto hidden peer-checked:block"
+									width="8"
+									height="6"
+									viewBox="0 0 8 6"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 3L3 5L7 1"
+										stroke="#0A1C38"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<span class="font-[200] h-8 md:h-5 md:flex text-left">
 								I agree to the
-								<a href="#" class="text-[#FFCF02] text-xs underline"
+								<a
+									href="#"
+									class="text-[#FFCF02] text-xs underline md:no-underline mx-1"
 									>Terms & Conditions</a
 								>
 								and the
-								<a href="#" class="text-[#FFCF02] text-xs underline"
+								<a
+									href="#"
+									class="text-[#FFCF02] text-xs underline md:no-underline"
 									>Privacy Policy</a
-								></span
-							>
+								>
+							</span>
 						</label>
 					</div>
 					<div>
-						<label class="flex items-center space-x-2 text-xs">
-							<input
-								id="link-checkbox"
-								type="checkbox"
-								value=""
-								class="peer relative appearance-none w-8 h-8 md:w-5 md:h-5 border-2 rounded-[5px] border-[#7184AB] checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
-							/>
-							<span class="font-[100]">
+						<label class="flex text-center md:gap-2 gap-4 items-center text-xs">
+							<div class="relative md:max-h-[20px] max-h-[32px]">
+								<input
+									id="link-checkbox"
+									type="checkbox"
+									value=""
+									class="peer appearance-none w-8 h-8 md:w-5 md:h-5 border-2 rounded-[5px] border-[#7184AB] checked:border-[#FCD130] checked:bg-[#FCD130] hover:cursor-pointer hover:border-[#FCD130] hover:duration-500"
+								/>
+								<svg
+									class="pointer-events-none absolute inset-0 m-auto hidden peer-checked:block"
+									width="8"
+									height="6"
+									viewBox="0 0 8 6"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 3L3 5L7 1"
+										stroke="#0A1C38"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<span class="font-[200] text-left">
 								I want to subscribe to the newsletter.
 							</span>
 						</label>
@@ -560,8 +647,8 @@
 		<footer
 			class="md:w-[1440px] justify-self-center bg-[#081831] text-white pt-8 md:px-0"
 		>
-			<div class="min-w-[360px] pl-10">
-				<div class="flex flex-col lg:flex-row gap-8 md:gap-12">
+			<div class="min-w-[360px] px-10">
+				<div class="flex flex-col lg:flex-row gap-20 md:gap-12">
 					<div class="">
 						<div
 							class="flex flex-col md:flex-row md:items-center items-start gap-4 md:gap-10"
@@ -585,80 +672,85 @@
 						</div>
 					</div>
 					<div
-						class="flex flex-col sm:flex-row md:gap-[59px] md:pl-[110px] mt-6 md:mt-0"
+						class="flex flex-col sm:flex-row md:gap-[59px] gap-[60px] md:pl-[110px] md:mt-0"
 					>
-						<div class="sm:w-[240px]">
-							<h3 class="text-lg md:text-xl font-[400] mb-4 md:mb-6">
-								Navigation
-							</h3>
-							<ul class="space-y-2 md:space-y-2">
+						<div class="sm:w-[240px] flex flex-col gap-8">
+							<h3 class="text-lg md:text-xl font-[400] mb-0">Navigation</h3>
+							<ul class="flex flex-col gap-4">
 								<li>
 									<a
 										href="#"
-										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text-sm md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300 py-1"
-										>The art of optimising</a
+										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text[16px] md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300"
 									>
+										The art of optimising
+									</a>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text-sm md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300 py-1"
-										>Boost your campaigns</a
+										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text[16px] md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300"
 									>
+										Boost your campaigns
+									</a>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text-sm md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300 py-1"
-										>Start optimising now</a
+										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text[16px] md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300"
 									>
+										Start optimising now
+									</a>
 								</li>
-								<li>
+								<li class="hidden md:block">
 									<a
 										href="#"
-										class="hidden md:block hover:text-[#FFCF02] text-[#7184AB] font-[600] text-sm md:text-base transition-all hover:-translate-x-[2px] duration-300 py-1"
-										>CampaignMeisters building blocks</a
+										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text[16px] md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300"
 									>
+										CampaignMeisters building blocks
+									</a>
 								</li>
 							</ul>
 						</div>
-						<div class="sm:w-[138px]">
-							<h3 class="text-lg md:text-xl font-[400] mb-4 md:mb-6">Legal</h3>
-							<ul class="space-y-2 md:space-y-2 mb-[60px]">
+						<div class="sm:w-[138px] flex flex-col gap-8">
+							<h3 class="text-lg md:text-xl font-[400] mb-0">Legal</h3>
+							<ul class="flex flex-col gap-4">
 								<li>
 									<a
 										href="#"
-										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text-sm md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300 py-1"
-										>Privacy Policy</a
+										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text[16px] md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300"
 									>
+										Privacy Policy
+									</a>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text-sm md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300 py-1"
-										>Cookie Policy</a
+										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text[16px] md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300"
 									>
+										Cookie Policy
+									</a>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text-sm md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300 py-1"
-										>Terms & Conditions</a
+										class="hover:text-[#FFCF02] text-[#7184AB] font-[600] text[16px] md:text-base inline-block transition-all hover:-translate-x-[2px] duration-300"
 									>
+										Terms & Conditions
+									</a>
 								</li>
 							</ul>
+						</div>
+						<div class="max-w-[250px] md:max-w-[1440px] mb-10 md:pt-10">
+							<p class="text-xs font-[300] text-left md:text-left">
+								CampaignMaster is a product of
+								<span class="text-[#FFCF02] md:underline font-[300]"
+									>Human Data Association</span
+								>
+							</p>
+							<br />
+							<p class="text-xs md:hidden block">© 2022.</p>
 						</div>
 					</div>
-				</div>
-				<div class="max-w-[250px] md:max-w-[1440px] md:pt-10">
-					<p class="text-xs font-[300] text-left md:text-left">
-						© 2022.CampaignMaster is a product of
-						<span class="text-[#FFCF02] md:underline font-[300]"
-							>Human Data Association</span
-						>
-					</p>
-					<br />
-					<p class="text-xs md:hidden block">© 2022.</p>
 				</div>
 			</div>
 		</footer>

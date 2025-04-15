@@ -18,3 +18,16 @@ export default {
 	},
 	plugins: [require("@tailwindcss/forms")],
 };
+module.exports = {
+	theme: {
+		extend: {
+			backgroundImage: {
+				"radial-gradient":
+					"radial-gradient(circle at center, var(--tw-gradient-stops))",
+				// Add more variants (e.g., elliptical, positioned)
+				"radial-gradient-top":
+					"radial-gradient(circle at top, var(--tw-gradient-stops))",
+			},
+		},
+	},
+};
